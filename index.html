@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>staff</title>
+    <style>
+        .container1{
+    max-width: 1300px;
+    background-color: #FFF;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+ } 
+
+ .span{
+position: relative;
+width: 200px;
+height: 30px;
+padding: 30px;
+color: white
+}
+
+.fixed-size-container {
+    position: sticky;
+    width: 100%;
+    margin: 0px auto 0 auto;
+    background-color:blue;
+    color:white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+  }
+
+  .call-outs-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+  } 
+
+  .call-out {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 75%;
+  }
+  
+  @media (min-width: 900px) {
+    .call-outs-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  } 
+
+  .blue{
+      padding: 20px;
+      margin: 20px;
+      background-color: blue;
+      text-decoration: none;
+      color: white;
+  }
+
+  .white{
+      padding: 20px;
+      margin: 20px;
+      background-color: white;
+  }
+
+  .lastcontainer{
+      background-color: black;
+      width: 1400px;
+      height: 300px;
+  }
+  .data{
+      border: black solid 1px;
+      width: auto;
+  }
+    </style>
+</head>
+<body>
+    
+    <div class="container1"> 
+        <span class = "img1" style="padding-right: 150px;"><img src="head.jpg" alt=""></span>
+        <span class="container2">
+            <a href="http://ww3.comsats.edu.pk/faculty/Default.aspx"><span class="span" style="background-color: blue;">Home</span></a>
+            <a href="http://ww3.comsats.edu.pk/faculty/ContactUs.aspx"><span class="span" style="background-color: green;">Contact</span></a>
+            <a href="http://ww3.comsats.edu.pk/feedback/default.aspx?Project=Faculty/Staff%20Portal"><span class="span" style="background-color: red;">Feedback</span></a>
+        </span>  
+    </div>
+
+    <div class="fixed-size-container">
+        <div class="fixed-size"><a href="https://shaukatkhanum.org.pk/ " style="color:grey; text-decoration: none; ">Home</a></div>
+        <div class="fixed-size"><a href="https://shaukatkhanum.org.pk/about-us/" style="color:grey; text-decoration: none;">A to Z faculty</a></div>
+        <div class="fixed-size"> <a href="https://shaukatkhanum.org.pk/patients-families/" style="color:grey; text-decoration: none; ">Faculty</a></div>
+        <div class="fixed-size"><a href="https://shaukatkhanum.org.pk/health-care-professionals-researchers/" style="color:grey; text-decoration: none;">A to Z Staff</a></div>
+        <div class="fixed-size"><a href="https://shaukatkhanum.org.pk/donors/" style="color:grey; text-decoration: none;"> Browse by Campus</a></div>
+        <div class="fixed-size"><a href="https://shaukatkhanum.org.pk/join-us/" style="color:grey; text-decoration: none;"> Registration</a></div>
+        <div class="fixed-size"><a href="https://shaukatkhanum.org.pk/contact-us/" style="color:grey; text-decoration: none;">Search Faculty/Staff</a></div>
+        
+</div>
+
+<div class="call-outs-container">
+    <div class="call-out" style="text-align: middle;">
+        <h2 style="text-align: center;">Quick Links</h2>
+        <a href="https://www.comsats.edu.pk/"><div class="blue">Cui Main Website</div></a>
+        <a href="http://ww3.comsats.edu.pk/Research/"><div class="white">Reseach Portal</div></a>
+        <a href="http://ww3.comsats.edu.pk/Scholarships/"><div class="blue">Scholarship Portal</div></a>
+</div>
+
+<div class="call-out" style="flex-shrink: 0;">
+    <h1 >Latest Staff Profiles</h1> 
+    <h4>These profiles are shown in descending order by profile creation date.</h4>
+    <div class="data">
+        <div class="profile">
+            <img src="profile.jpg" alt="">
+            
+
+        </div>
+        
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="lastcontainer"></div>
+</body>
+</html>
